@@ -1,6 +1,7 @@
-[build]
+[build] 
+  command = "npm run build && cp './app-ads.txt' './public/app-ads.txt'"
   publish = ".next"
-  command = "npm run build"
+  functions = ".netlify/functions"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
